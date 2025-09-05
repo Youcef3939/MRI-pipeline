@@ -52,15 +52,18 @@ To extend this project:
 
 ## ⚙️ Installation
 1.clone the repo:
-git clone https://github.com/Youcef3939/MRI_preprocessing_pipeline.git
+git clone https://github.com/Youcef3939/MRI_pipeline.git
 cd MRI_preprocessing_pipeline
 
 2.create a virtual environment:
 python -m venv venv
+
 source venv/bin/activate   # On Linux/Mac
+
 venv\Scripts\activate      # On Windows
 
 3.install dependencies:
+
 pip install -r requirements.txt
 
 ---
@@ -93,6 +96,8 @@ original MRI--> synthetic mask--> predicted mask
 
 ## 🙌 Acknowledgements
 . open datasets from kaggle and the BraTS challenge
+
+
 . u-net architecture inspiration from biomedical image segmentation resarch
 
 
