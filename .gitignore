@@ -1,11 +1,20 @@
-venv/
 
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 
+venv/
+s
 .ipynb_checkpoints/
 
 .DS_Store
 Thumbs.db
+
+data/*
+!data/step2_samples/
+
+results/*
+!results/result-step2.png
+
+*.log
+*.tmp
