@@ -86,7 +86,7 @@ predicted tumor
 
 step3-tumor segmentation
 original MRI--> synthetic mask--> predicted mask
-![alt text](results-step3.png)
+![alt text](results/results-step3.png)
 
 
 --- 
