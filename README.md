@@ -3,7 +3,7 @@
 ![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-brightgreen.svg)
 ![Help Wanted](https://img.shields.io/badge/help-wanted-ff69b4.svg)
 
-this repository showcases a step-by-step pipeline for **MRI brain tumor analysis**, progressing from simple preprocessing to tumor classification and segmentation.  
+this repository showcases a step-by-step pipeline for **MRI brain tumor analysis**, progressing from simple preprocessing to tumor classification and segmentation
 it’s designed as an educational/demo project to help others understand the foundations of medical imaging with AI
 
 ---
@@ -11,20 +11,20 @@ it’s designed as an educational/demo project to help others understand the fou
 ## 📌 steps in the pipeline
 
 ### 🔹 step 1: MRI preprocessing
-- load MRI images.
-- normalize pixel intensities.
-- apply contrast enhancement and noise reduction.
-- visualize **original vs preprocessed MRI**.
-
+- load MRI images
+- normalize pixel intensities
+- apply contrast enhancement and noise reduction
+- visualize **original vs preprocessed MRI**
+- 
 📒 notebook: `mri_preprocessing_demo.ipynb`
 
 ---
 
 ### 🔹 step 2: tumor detection (classification)
-- load MRI slices.
-- train a simple CNN to **detect whether a tumor is present**.
-- output a probability score for each image.
-- visualize predictions.
+- load MRI slices
+- train a simple CNN to **detect whether a tumor is present**
+- output a probability score for each image
+- visualize predictions
 
 📒 notebook: `notebooks/tumor_detection_demo.ipynb`  
 📂 example output: `results/result-step2.png`
@@ -33,23 +33,23 @@ it’s designed as an educational/demo project to help others understand the fou
 
 ### 🔹 step 3: tumor segmentation
 - move beyond “tumor vs no tumor” to **locating the tumor region**
-- built a lightweight **U-Net–style model** for segmentation.
-- demonstrated with synthetic masks for demo purposes.
-- visualized **MRI → ground truth → predicted mask**.
+- built a lightweight **U-Net–style model** for segmentation
+- demonstrated with synthetic masks for demo purposes
+- visualized **MRI → ground truth → predicted mask**
 
 📒 notebook: `notebooks/tumor_segmentation_demo.ipynb`
 
 ---
 
 ## 🚀 future work: 3D Segmentation
-this repo uses **2D slices** (`.png`) for simplicity.  
-in real-world MRI analysis, tumors are segmented in **3D volumes** using DICOM (`.dcm`) or NIfTI (`.nii`) datasets.
+this repo uses **2D slices** (`.png`) for simplicity
+in real-world MRI analysis, tumors are segmented in **3D volumes** using DICOM (`.dcm`) or NIfTI (`.nii`) datasets
 
 to extend this project:
-- use libraries like `pydicom` or `nibabel` to load 3D MRI volumes.
-- replace 2D layers (`Conv2D`, `MaxPooling2D`) with **3D equivalents** (`Conv3D`, `MaxPooling3D`).
-- train models like **3D U-Net** or **V-Net**.
-- visualize in 3D with tools like `itk-snap`, `plotly`, or `mayavi`.
+- use libraries like `pydicom` or `nibabel` to load 3D MRI volumes
+- replace 2D layers (`Conv2D`, `MaxPooling2D`) with **3D equivalents** (`Conv3D`, `MaxPooling3D`)
+- train models like **3D U-Net** or **V-Net**
+- visualize in 3D with tools like `itk-snap`, `plotly`, or `mayavi`
 
 ---
 
