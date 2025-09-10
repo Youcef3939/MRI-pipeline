@@ -1,5 +1,8 @@
 # 🧠 MRI Tumor analysis pipeline
 
+![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-brightgreen.svg)
+![Help Wanted](https://img.shields.io/badge/help-wanted-ff69b4.svg)
+
 this repository showcases a step-by-step pipeline for **MRI brain tumor analysis**, progressing from simple preprocessing to tumor classification and segmentation.  
 it’s designed as an educational/demo project to help others understand the foundations of medical imaging with AI
 
@@ -34,7 +37,7 @@ it’s designed as an educational/demo project to help others understand the fou
 - demonstrated with synthetic masks for demo purposes.
 - visualized **MRI → ground truth → predicted mask**.
 
-📒 Notebook: `notebooks/tumor_segmentation_demo.ipynb`
+📒 notebook: `notebooks/tumor_segmentation_demo.ipynb`
 
 ---
 
@@ -43,14 +46,14 @@ this repo uses **2D slices** (`.png`) for simplicity.
 in real-world MRI analysis, tumors are segmented in **3D volumes** using DICOM (`.dcm`) or NIfTI (`.nii`) datasets.
 
 to extend this project:
-- Use libraries like `pydicom` or `nibabel` to load 3D MRI volumes.
-- Replace 2D layers (`Conv2D`, `MaxPooling2D`) with **3D equivalents** (`Conv3D`, `MaxPooling3D`).
-- Train models like **3D U-Net** or **V-Net**.
-- Visualize in 3D with tools like `itk-snap`, `plotly`, or `mayavi`.
+- use libraries like `pydicom` or `nibabel` to load 3D MRI volumes.
+- replace 2D layers (`Conv2D`, `MaxPooling2D`) with **3D equivalents** (`Conv3D`, `MaxPooling3D`).
+- train models like **3D U-Net** or **V-Net**.
+- visualize in 3D with tools like `itk-snap`, `plotly`, or `mayavi`.
 
 ---
 
-## ⚙️ Installation
+## ⚙️ installation
 1.clone the repo:
 git clone https://github.com/Youcef3939/MRI_pipeline.git
 cd MRI_preprocessing_pipeline
@@ -69,6 +72,7 @@ pip install -r requirements.txt
 ---
 
 ## ▶️usage
+
 1. step01-preprocessing: jupyter notebook mri_preprocessing_demo.ipynb
 
 2. tumor detection: jupyter notebook notebooks/tumor_detection_demo.ipynb
@@ -78,7 +82,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📊 Example Results
+## 📊 example Results
 step1-preprocessing
 original vs preprocessed MRI
 ![alt text](image.png)
@@ -101,26 +105,25 @@ original MRI--> synthetic mask--> predicted mask
 . u-net architecture inspiration from biomedical image segmentation resarch
 
 
-## 🤝 Contributing
+## 🤝 contributing
 This project is a **work in progress** and open to collaboration!  
 
-If you’re interested in:
-- Adding **new preprocessing techniques**  
-- Improving the **tumor detection model**  
-- Extending Step 3 to **real 3D segmentation** using DICOM/NIfTI datasets  
-- Creating **better visualizations** or **demo outputs**  
+if you’re interested in:
+- adding **new preprocessing techniques**  
+- improving the **tumor detection model**  
+- extending Step 3 to **real 3D segmentation** using DICOM/NIfTI datasets  
+- creating **better visualizations** or **demo outputs**  
 
 …then you’re welcome to contribute!  
 
-### How to contribute:
-1. Fork the repository.  
-2. Create a new branch: `git checkout -b feature-name`.  
-3. Make your changes and commit: `git commit -m "Add feature XYZ"`.  
-4. Push to your fork: `git push origin feature-name`.  
-5. Open a Pull Request — I’ll review it!  
+### how to contribute:
+1. fork the repository.  
+2. create a new branch: `git checkout -b feature-name`.  
+3. make your changes and commit: `git commit -m "Add feature XYZ"`.  
+4. push to your fork: `git push origin feature-name`.  
+5. open a pull request — I’ll review it!  
 
 Let’s build a **community-driven MRI tumor analysis pipeline** together 🚀
-![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-brightgreen.svg)
-![Help Wanted](https://img.shields.io/badge/help-wanted-ff69b4.svg)
+
 
 i'd love your help improving this pipeline!  
