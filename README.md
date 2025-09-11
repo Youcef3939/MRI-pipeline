@@ -29,7 +29,6 @@ it’s designed as an educational/demo project to help others understand the fou
 📒 notebook: `notebooks/tumor_detection_demo.ipynb`  
 📂 example output: `results/result-step2.png`
 
-
 ---
 
 ### 🔹 step 3: tumor segmentation
